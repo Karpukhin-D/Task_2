@@ -101,3 +101,74 @@ class Program
     }
 }
 ```
+
+> * №7. Задача: Что произойдет при выполнении int max = int.MaxValue; int res = checked(max + 1);? Ответ: Выбросится исключение System.OverflowException.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int max = int.MaxValue; 
+        int res = checked(max + 1);
+
+        Console.WriteLine($"res = {res}");
+    }
+}
+```
+
+> * №8. Задача: Что произойдет при int max = int.MaxValue; int res = unchecked(max + 1);? Ответ: res = int.MinValue (произойдет переполнение без ошибки).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int max = int.MaxValue; 
+        int res = unchecked(max + 1);
+
+        Console.WriteLine($"res = {res}");
+    }
+}
+```
+
+> * №9. Задача: Чему равен результат деления 1.0 / 0.0 и 0.0 / 0.0? Ответ: double.PositiveInfinity (Infinity) и double.NaN.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double a = 1.0 / 0.0; 
+        double b = 0.0 / 0.0;
+
+        Console.WriteLine($"a = {a}");
+        Console.WriteLine($"b = {b}");
+    }
+}
+```
+
+> * №10. Задача: Вычислите: int a = 8; int b = 3; int c = a - b * 2 + a / b;. Ответ: 8 - 6 + 2 = 4.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 8; 
+        int b = 3;
+        int c = a - b * 2 + a / b;
+
+        Console.WriteLine($"c = {c}");
+    }
+}
+```
+
