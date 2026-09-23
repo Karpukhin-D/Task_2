@@ -171,4 +171,173 @@ class Program
     }
 }
 ```
+---
 
+### 3.2. Операторы сравнения и равенства
+
+---
+
+> * №1. Задача: Каков результат 5 > 3 и 5 >= 5? Ответ: true, true.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = 5 > 3;
+        bool b = 5 >= 5;
+
+        Console.WriteLine($"a = {a}");
+        Console.WriteLine($"b = {b}");
+    }
+}
+```
+
+> * №2. Задача: Чему равно "hello" == "hello" в C# и почему? Ответ: true, так как для типа string оператор == перегружен для посимвольного сравнения значений.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = "hello" == "hello";
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №3. Задача: Чему равно выражение double.NaN == double.NaN? Ответ: false (по стандарту IEEE 754 NaN не равен ничему, даже самому себе).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = double.NaN == double.NaN;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №4. Задача: Каков результат выражения object a = new int[] { 1 }; object b = new int[] { 1 }; bool r = a == b;? Ответ: false (сравниваются ссылки на два разных объекта в куче).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        object a = new int[] { 1 };
+        object b = new int[] { 1 }; 
+        bool r = a == b;
+
+        Console.WriteLine($"r = {r}");
+    }
+}
+```
+
+> * №5. Задача: Чему равно 10 != 10.0? Ответ: false (целое число 10 неявно приводится к 10.0, значения равны).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = 10 != 10.0;
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №6. Задача: Что вернет null == null? Ответ: true.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = null == null;
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №7. Задача: Каков результат выражения (3 < 5) == (10 >= 20)? Ответ: false (true == false дает false).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = (3 < 5) == (10 >= 20);
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №8. Задача: Вычислите bool res = 4 <= 4 && 5 > 2;. Ответ: true.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool res = 4 <= 4 && 5 > 2;
+
+        Console.WriteLine($"res = {res}");
+    }
+}
+```
+
+> * №9. Задача: Что вернет выражение char c = 'b'; bool res = c > 'a';? Ответ: true (символы сравниваются по их числовым кодам Unicode: 98 > 97).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        char c = 'b';
+        bool res = c > 'a';
+
+        Console.WriteLine($"res = {res}");
+    }
+}
+```
+
+> * №10. Задача: Сравните результат bool r = -0.0 == 0.0;. Ответ: true (ноль со знаком равен обычному нулю).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool r = -0.0 == 0.0;
+
+        Console.WriteLine($"r = {r}");
+    }
+}
+```
