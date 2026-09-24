@@ -341,3 +341,170 @@ class Program
     }
 }
 ```
+---
+### 3.3. Логические операторы
+---
+
+> * №1. Задача: Вычислите: !true || false && true. Ответ: false (приоритет: ! -> && -> ||: false || false дает false).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = !true || false && true;
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №2. Задача: Будет ли вызван метод Foo() в false && Foo()? Ответ: Нет, благодаря короткому замыканию оператора &&.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = false && Foo();
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №3. Задача: Будет ли вызван метод Foo() в false & Foo()? Ответ: Да, побитовое/строгое логическое & вычисляет оба операнда.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+....
+    }
+}
+```
+
+> * №4. Задача: Вычислите результат: true ^ false ^ true. Ответ: false (true ^ false = true, затем true ^ true = false).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = true ^ false ^ true;
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №5. Задача: Что вернет выражение !(5 > 2 || 3 < 1)? Ответ: false (5 > 2 истинно, внутри скобок true, отрицание дает false).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = !(5 > 2 || 3 < 1);
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №6. Задача: Дано: bool a = true, b = false;. Чему равно a && !b || b && !a? Ответ: true (true && true || false && false -> true || false -> true).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = true, b = false;
+        bool c = a && !b || b && !a;
+
+        Console.WriteLine($"c = {c}");
+    }
+}
+```
+
+> * №7. Задача: Каков результат true || (x / 0 == 1) при любом целом x? Ответ: true (деление на ноль не произойдет из-за короткого замыкания ||).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 10;
+        bool a = true || (x / 0 == 1);
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №8. Задача: Каков результат false & (10 / 0 == 1)? Ответ: Выбросится исключение DivideByZeroException, так как & обязательно вычисляет правый операнд.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = false & (10 / 0 == 1);
+
+        Console.WriteLine($"a = {a}");
+    }
+}
+```
+
+> * №9. Задача: Чему эквивалентно выражение !(A && B) по закону де Моргана? Ответ: !A || !B.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool A = true, B = false;
+        bool DeMorgan = !(A && B);
+        bool DeMorganEquivalent = !A || !B;
+
+        Console.WriteLine($"{DeMorgan}, {DeMorganEquivalent}");
+    }
+}
+```
+
+> * №10. Задача: Чему эквивалентно выражение !(A || B) по закону де Моргана? Ответ: !A && !B.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool A = true, B = false;
+        bool DeMorgan = !(A || B);
+        bool DeMorganEquivalent = !A && !B;
+
+        Console.WriteLine($"{DeMorgan}, {DeMorganEquivalent}");
+    }
+}
+```
