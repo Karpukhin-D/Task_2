@@ -508,3 +508,87 @@ class Program
     }
 }
 ```
+---
+
+### 3.4. Побитовые операторы и сдвиги
+
+---
+
+> * №1. Задача: Чему равен результат 5 & 3 в двоичном и десятичном виде? Ответ: 0101 & 0011 = 0001 (десятичное 1).
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            int x = 5 & 3;
+
+            Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №2. Задача: Чему равен результат 5 | 3? Ответ: 0101 | 0011 = 0111 (десятичное 7).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            int x = 5 | 3;
+
+            Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №3. Задача: Чему равен результат 5 ^ 3? Ответ: 0101 ^ 0011 = 0110 (десятичное 6).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            int x = 5 ^ 3;
+
+            Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №4. Задача: Вычислите ~0 для типа int. Ответ: -1 (все биты устанавливаются в 1, что в дополнительном коде равно -1).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            int x = ~0;
+
+            Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №5. Задача: Чему равно 1 << 4? Ответ: 16 
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            int x = 1 << 4;
+
+            Console.WriteLine($"{x}");
+    }
+}
+```
