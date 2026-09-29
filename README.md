@@ -592,3 +592,35 @@ class Program
     }
 }
 ```
+
+> * №6. Задача: Чему равно 40 >> 2? Ответ: 10
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            int x = 40 >> 2;
+
+            Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №7. Задача: Как с помощью побитовой операции проверить, установлен ли третий бит числа n (маска 2^3=8)? 
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+            int x = 40 >> 2;
+
+            Console.WriteLine($"{x}");
+    }
+}
+```
