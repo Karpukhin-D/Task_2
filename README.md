@@ -618,9 +618,241 @@ class Program
 {
     static void Main()
     {
-            int x = 40 >> 2;
+        Console.Write("Введите число n: ");
+        int n = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"{x}");
+        bool x = (n & 8) != 0;
+
+        Console.WriteLine($"3-й бит установлен: {x}");
+    }
+}
+```
+
+> * №8. Задача: Как с помощью побитовой операции установить 2-й бит числа n в 1? Ответ: n = n | (1 << 2); (или n |= (1 << 2);).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = 5;
+        n |= (1 << 2);
+
+        Console.WriteLine(n);
+    }
+}
+```
+
+> * №9. Задача: Как сбросить (установить в 0) 4-й бит числа n? Ответ: n = n & ~(1 << 4); (или n &= ~(1 << 4);).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = 25;
+        n = n & ~(1 << 4);
+
+        Console.WriteLine($"{n}");
+    }
+}
+```
+
+> * №10. Задача: Каков результат выражения (-16) >> 2 для int? Ответ: -4 (арифметический сдвиг вправо сохраняет знаковый бит 1).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = (-16) >> 2;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+---
+
+### 3.5. Операторы присваивания
+
+---
+
+> * №1. Задача: Что делает оператор x += 5? Ответ: Эквивалентен x = x + 5 (с приведением типа при необходимости).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 8;
+        x += 5;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №2. Задача: Каково значение a после выполнения: int a = 10; a *= 2 + 3;? Ответ: 50 (правая часть вычисляется полностью перед умножением: a = a * (2 + 3)).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 10;
+        a *= 2 + 3;
+
+        Console.WriteLine($"{a}");
+    }
+}
+```
+
+> * №3. Задача: Чему равен x после int x = 12; x >>= 2;? Ответ: 3.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 12; 
+        x >>= 2;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №4. Задача: Что делает оператор x ??= y? Ответ: Присваивает переменной x значение y только в том случае, если x == null.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int? x = null;
+        int y = 7;
+        x = x ?? y;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №5. Задача: Чему будет равна строка str после: string str = null; str ??= "default"; str ??= "custom"; Ответ: "default".
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string str = null;
+        str ??= "default";
+        str ??= "custom";
+
+        Console.WriteLine($"{str}");
+    }
+}
+```
+
+> * №6. Задача: Допустимо ли выражение byte b = 1; b += 2; без явного приведения? Ответ: Да, составные операторы присваивания содержат неявное сужающее приведение типа: b = (byte)(b + 2).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        byte b = 1; 
+        b += 2;
+
+        Console.WriteLine($"{b}");
+    }
+}
+```
+
+> * №7. Задача: Чему равно значение c после int a = 5, b = 10, c = 0; c = a = b;? Ответ: 10 (присваивание ассоциативно справа налево).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 5, b = 10, c = 0; 
+        c = a = b;
+
+        Console.WriteLine($"{c}");
+    }
+}
+```
+
+> * №8. Задача: Каково значение mask после: int mask = 1; mask <<= 3; mask |= 2;? Ответ: 10 (1 << 3 = 8, затем 8 | 2 = 10).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int mask = 1;
+        mask <<= 3; 
+        mask |= 2;
+
+        Console.WriteLine($"{mask}");
+    }
+}
+```
+
+> * №9. Задача: Чему равно x после int x = 15; x %= 4;? Ответ: 3.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 15;
+        x %= 4;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №10. Задача: Чему равно x после int x = 7; x ^= 7;? Ответ: 0 (любое число XOR само с собой дает 0).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 7;
+        x ^= 7;
+
+        Console.WriteLine($"{x}");
     }
 }
 ```
