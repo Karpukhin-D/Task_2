@@ -840,6 +840,8 @@ class Program
 }
 ```
 
+
+
 > * №10. Задача: Чему равно x после int x = 7; x ^= 7;? Ответ: 0 (любое число XOR само с собой дает 0).
 
 ```csharp
@@ -853,6 +855,179 @@ class Program
         x ^= 7;
 
         Console.WriteLine($"{x}");
+    }
+}
+```
+---
+
+### 3.6. Тернарный и null-операторы
+
+---
+
+> * №1. Задача: Вычислите int score = 75; string res = score >= 60 ? "Pass" : "Fail";. Ответ: "Pass".
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int score = 75; 
+        string res = score >= 60 ? "Pass" : "Fail";
+
+        Console.WriteLine($"{res}");
+    }
+}
+```
+
+> * №2. Задача: Чему равно int x = 5; int y = (x > 10) ? 100 : (x > 2) ? 50 : 0;? Ответ: 50.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 5; 
+        int y = (x > 10) ? 100 : (x > 2) ? 50 : 0;
+
+        Console.WriteLine($"{y}");
+    }
+}
+```
+
+> * №3. Задача: Какой тип имеет результат выражения true ? 10 : 15.5? Ответ: double.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double x = true ? 10 : 15.5;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №4. Задача: Что выведет выражение string s = null; Console.WriteLine(s?.Length);? Ответ: Ничего / null (оператор ?. предотвращает NullReferenceException).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string s = null;
+        
+        Console.WriteLine(s?.Length);
+    }
+}
+```
+
+> * №5. Задача: Какой тип имеет результат выражения s?.Length для string s? Ответ: int? (Nullable<int>).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string s = null;
+        int? x = s?.Length;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №6. Задача: Вычислите: string name = null; string res = name ?? "Anonymous";. Ответ: "Anonymous".
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string name = null; 
+        string res = name ?? "Anonymous";
+
+        Console.WriteLine($"{res}");
+    }
+}
+```
+
+> * №7. Задача: Вычислите: string a = null, b = "User", c = "Admin"; string res = a ?? b ?? c;. Ответ: "User".
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string a = null, b = "User", c = "Admin"; 
+        string res = a ?? b ?? c;
+
+        Console.WriteLine($"{res}");
+    }
+}
+```
+
+> * №8. Задача: Что вернет выражение false ? (10 / 0) : 42? Ответ: 42 (второй операнд не вычисляется из-за ложного условия).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int zero = 0;
+        int res = false ? (10 / zero) : 42;
+
+        Console.WriteLine($"{res}");
+    }
+}
+```
+
+> * №9. Задача: Скомпилируется ли код var x = condition ? 10 : "text";? Ответ: Нет (в классическом C#), так как у типов int и string нет неявного взаимного приведения.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool condition = true;
+        var x = condition ? 10 : "text";
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №10. Задача: Чему равно int? count = null; int res = count?.GetHashCode() ?? -1;? Ответ: -1.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int? count = null; 
+        int res = count?.GetHashCode() ?? -1;
+
+        Console.WriteLine($"{res}");
     }
 }
 ```
