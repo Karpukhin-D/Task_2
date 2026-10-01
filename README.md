@@ -1574,7 +1574,7 @@ class Program
     {
         bool x = (true ? (false ? 1 : 2) : (true ? 3 : 4)) == 2;
 
-        Console.WriteLine($"№24: {x}");
+        Console.WriteLine($"№23: {x}");
     }
 }
 ```
