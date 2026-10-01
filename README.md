@@ -1370,3 +1370,211 @@ class Program
     }
 }
 ```
+
+> * №11. (12 & 10) > 5 || (12 | 10) < 15 && !(3 == 3)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (12 & 10) > 5 || (12 | 10) < 15 && !(3 == 3);
+
+        Console.WriteLine($"№11: {x}");
+    }
+}
+```
+
+> * №12. ((20 >> 2) == 5) ^ ((5 << 1) == 11)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = ((20 >> 2) == 5) ^ ((5 << 1) == 11);
+
+        Console.WriteLine($"№12: {x}");
+    }
+}
+```
+
+> * №13. !(!(true || false) && (true && !false))
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = !(!(true || false) && (true && !false));
+
+        Console.WriteLine($"№13: {x}");
+    }
+}
+```
+
+> * №14. (7 > 2 ? 10 : 20) == 10 && (3 < 1 ? 5 : 15) == 15
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (7 > 2 ? 10 : 20) == 10 && (3 < 1 ? 5 : 15) == 15;
+
+        Console.WriteLine($"№14: {x}");
+    }
+}
+```
+
+> * №15. (5 & 1) == 1 && (6 & 1) == 0 && (7 & 1) == 1 (проверка на нечетность)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (5 & 1) == 1 && (6 & 1) == 0 && (7 & 1) == 1;
+
+        Console.WriteLine($"№15: {x}");
+    }
+}
+```
+
+> * №16. ((10 > 5 ? true : false) ^ (3 > 8 ? true : false)) && !false
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = ((10 > 5 ? true : false) ^ (3 > 8 ? true : false)) && !false;
+
+        Console.WriteLine($"№16: {x}");
+    }
+}
+```
+
+> * №17. !( (5 > 2 && 10 > 20) || (3 == 3 && 4 <= 4) )
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = !((5 > 2 && 10 > 20) || (3 == 3 && 4 <= 4));
+
+        Console.WriteLine($"№17: {x}");
+    }
+}
+```
+
+> * №18. ( (1 << 3) == 8 ) && ( (16 >> 4) == 1 ) && ( (2 << 2) == 8 )
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = ((1 << 3) == 8) && ((16 >> 4) == 1) && ((2 << 2) == 8);
+
+        Console.WriteLine($"№18: {x}");
+    }
+}
+```
+
+> * №19. ( (10 & 7) == 2 ) || ( (10 | 7) == 15 ) ^ !(4 > 1)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = ((10 & 7) == 2) || ((10 | 7) == 15) ^ !(4 > 1);
+
+        Console.WriteLine($"№19: {x}");
+    }
+}
+```
+
+> * №20. false || true && false || true && !false
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = false || true && false || true && !false;
+
+        Console.WriteLine($"№20: {x}");
+    }
+}
+```
+
+> * №21. (25 % 4 == 1) && (17 / 3 == 5) && (17 % 3 == 2)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (25 % 4 == 1) && (17 / 3 == 5) && (17 % 3 == 2);
+
+        Console.WriteLine($"№21: {x}");
+    }
+}
+```
+
+> * №22. ( (5 ^ 3 ^ 3) == 5 ) && ( (10 ^ 0) == 10 )
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = ((5 ^ 3 ^ 3) == 5) && ((10 ^ 0) == 10);
+
+        Console.WriteLine($"№22: {x}");
+    }
+}
+```
+
+> * №23. (true ? (false ? 1 : 2) : (true ? 3 : 4)) == 2
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (true ? (false ? 1 : 2) : (true ? 3 : 4)) == 2;
+
+        Console.WriteLine($"№24: {x}");
+    }
+}
+```
