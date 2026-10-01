@@ -1031,3 +1031,167 @@ class Program
     }
 }
 ```
+---
+
+### 3.7. Операторы типов и приведения
+
+---
+
+> * №1. Задача: Что вернет выражение object obj = "Hello"; bool check = obj is string;? Ответ: true.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        object obj = "Hello"; 
+        bool check = obj is string;
+
+        Console.WriteLine($"{check}");
+    }
+}
+```
+
+> * №2. Задача: Что вернет object obj = 123; string s = obj as string;? Ответ: null (оператор as возвращает null при невозможности безопасного приведения ссылочного типа).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        object obj = 123; 
+        string s = obj as string;
+
+        Console.WriteLine($"{s}");
+    }
+}
+```
+
+> * №3. Задача: Что произойдет при явном приведении object obj = 123; string s = (string)obj;? Ответ: Выбросится исключение System.InvalidCastException.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        object obj = 123;
+        string s = (string)obj;
+
+        Console.WriteLine($"{s}");
+    }
+}
+```
+
+> * №4. Задача: Что вернет typeof(int) == typeof(Int32)? Ответ: true (псевдоним языка ссылается на один и тот же тип CLR).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool res = typeof(int) == typeof(Int32);
+
+        Console.WriteLine($"{res}");
+    }
+}
+```
+
+> * №5. Задача: Чему равен результат sizeof(long) в байтах? Ответ: 8.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine($"sizeof(long) = {sizeof(long)} байт");
+    }
+}
+```
+
+> * №6. Задача: Что вернет null is string? Ответ: false (шаблон is для null всегда возвращает false, кроме шаблона is null).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine($"{null is string}");
+    }
+}
+```
+
+> * №7. Задача: Что вернет выражение object x = null; bool b = x is null;? Ответ: true.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        object x = null;
+        bool b = x is null;
+
+        Console.WriteLine($"{b}");
+    }
+}
+```
+
+> * №8. Задача: Каков результат (int)3.99? Ответ: 3 (дробная часть отсекается без округления).
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = (int)3.99;
+
+        Console.WriteLine($"{x}");
+    }
+}
+```
+
+> * №9. Задача: Каков результат pattern matching: object o = 42; if (o is int val && val > 40) { ... } Будет ли выполнено тело блока? Ответ: Да, val получит значение 42, условие val > 40 истинно.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        object o = 42;
+        if (o is int val && val > 40);
+
+        Console.WriteLine($"{o}");
+    }
+}
+```
+
+> * №10. Задача: Что вернет выражение default(int) и default(string)? Ответ: 0 и null.
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine($"{default(int)}, {default(string) ?? "null"}");
+    }
+}
+```
