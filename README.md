@@ -386,7 +386,14 @@ class Program
 {
     static void Main()
     {
-....
+        bool Foo()
+        {
+            Console.WriteLine("Foo вызван!");
+            return true;
+        }
+
+        bool r = false & Foo();
+        Console.WriteLine(r);
     }
 }
 ```
