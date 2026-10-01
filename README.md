@@ -1202,3 +1202,171 @@ class Program
     }
 }
 ```
+
+---
+
+### 4. 35 сложносоставных заданий на логические выражения
+
+---
+
+> * №1. (5 > 3) && !(10 <= 2) || (4 == 5)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (5 > 3) && !(10 <= 2) || (4 == 5);
+
+        Console.WriteLine($"№1: {x}");
+    }
+}
+```
+
+> * №2. !(true && false) ^ (true || false && false)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = !(true && false) ^ (true || false && false);
+
+        Console.WriteLine($"№2: {x}");
+    }
+}
+```
+
+> * №3. (10 & 6) == 2 && (10 | 6) == 14
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (10 & 6) == 2 && (10 | 6) == 14;
+
+        Console.WriteLine($"№3: {x}");
+    }
+}
+```
+
+> * №4. (15 >> 1 == 7) && (7 << 2 == 28)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (15 >> 1 == 7) && (7 << 2 == 28);
+
+        Console.WriteLine($"№4: {x}");
+    }
+}
+```
+
+> * №5. (8 > 5) && (3 + 2 * 4 == 11) && !(false || !true)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (8 > 5) && (3 + 2 * 4 == 11) && !(false || !true);
+
+        Console.WriteLine($"№5: {x}");
+    }
+}
+```
+
+> * №6. (true || false) && (false || true) ^ (true && !false)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (true || false) && (false || true) ^ (true && !false);
+
+        Console.WriteLine($"№6: {x}");
+    }
+}
+```
+
+> * №7. (100 / 10 == 10) && (100 % 30 == 10) && !(5 - 5 != 0)
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (100 / 10 == 10) && (100 % 30 == 10) && !(5 - 5 != 0);
+
+        Console.WriteLine($"№7: {x}");
+    }
+}
+```
+
+> * №8. (4 ^ 4) == 0 && (4 ^ 0) == 4 && (0 ^ 0) == 0
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool x = (4 ^ 4) == 0 && (4 ^ 0) == 4 && (0 ^ 0) == 0;
+
+        Console.WriteLine($"№8: {x}");
+    }
+}
+```
+
+> * №9. !(5 != 5) && ((3 >= 3) || (10 / 0 == 1))
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int z = 0;
+        bool x = !(5 != 5) && ((3 >= 3) || (10 / z == 1));
+
+        Console.WriteLine($"№9: {x}");
+    }
+}
+```
+
+> * №10. (false && (10 / 0 == 1)) || (true && (20 > 15))
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int z = 0;
+        bool x = (false && (10 / z == 1)) || (true && (20 > 15));
+
+        Console.WriteLine($"№10: {x}");
+    }
+}
+```
