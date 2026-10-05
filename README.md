@@ -367,14 +367,19 @@ class Program
 using System;
 
 class Program
-{
-    static void Main()
     {
-        bool a = false && Foo();
+        static void Main()
+        {
+            bool Foo()
+            {
+                Console.WriteLine("Foo вызван!");
+                return true;
+            }
 
-        Console.WriteLine($"a = {a}");
+            bool r = false && Foo();
+            Console.WriteLine(r);
+        }
     }
-}
 ```
 
 > * №3. Задача: Будет ли вызван метод Foo() в false & Foo()? Ответ: Да, побитовое/строгое логическое & вычисляет оба операнда.
