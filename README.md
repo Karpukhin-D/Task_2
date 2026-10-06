@@ -39,6 +39,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.1.2.png.png">
+</picture>
 
 > * №3. Задача: Каково значение res после выполнения int a = 5; int res = a++ * 2;? Ответ: res = 10 (постфиксный инкремент использует исходное значение 5, затем a становится равным 6).
 ```csharp
@@ -56,6 +60,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.1.3.png.png">
+</picture>
 
 > * №4. Задача: Чему равен результат 7 / 2 и 7.0 / 2? Ответ: 3 (целочисленное деление) и 3.5 (деление с плавающей запятой).
 ```csharp
@@ -73,6 +81,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.1.4.png.png">
+</picture>
 
 > * №5. Задача: Каков результат выражения -15 % 4 в C#? Ответ: -3 (знак остатка совпадает со знаком делимого).
 ```csharp
@@ -88,6 +100,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.1.5.png.png">
+</picture>
 
 > * №6. Задача: Что выведет выражение int x = 10; x = x++ + ++x;? Ответ: 22 (первое слагаемое 10, после него x становится 11, префиксный инкремент делает x = 12, итог 10+12=22).
 
