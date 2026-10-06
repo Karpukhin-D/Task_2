@@ -875,6 +875,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.1.png">
+</picture>
 
 > * №2. Задача: Каково значение a после выполнения: int a = 10; a *= 2 + 3;? Ответ: 50 (правая часть вычисляется полностью перед умножением: a = a * (2 + 3)).
 
@@ -892,6 +896,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.2.png">
+</picture>
 
 > * №3. Задача: Чему равен x после int x = 12; x >>= 2;? Ответ: 3.
 
@@ -909,6 +917,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.3.png">
+</picture>
 
 > * №4. Задача: Что делает оператор x ??= y? Ответ: Присваивает переменной x значение y только в том случае, если x == null.
 
@@ -927,6 +939,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.4.png">
+</picture>
 
 > * №5. Задача: Чему будет равна строка str после: string str = null; str ??= "default"; str ??= "custom"; Ответ: "default".
 
@@ -945,6 +961,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.5.png">
+</picture>
 
 > * №6. Задача: Допустимо ли выражение byte b = 1; b += 2; без явного приведения? Ответ: Да, составные операторы присваивания содержат неявное сужающее приведение типа: b = (byte)(b + 2).
 
@@ -962,6 +982,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.6.png">
+</picture>
 
 > * №7. Задача: Чему равно значение c после int a = 5, b = 10, c = 0; c = a = b;? Ответ: 10 (присваивание ассоциативно справа налево).
 
@@ -979,6 +1003,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.7.png">
+</picture>
 
 > * №8. Задача: Каково значение mask после: int mask = 1; mask <<= 3; mask |= 2;? Ответ: 10 (1 << 3 = 8, затем 8 | 2 = 10).
 
@@ -997,6 +1025,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.8.png">
+</picture>
 
 > * №9. Задача: Чему равно x после int x = 15; x %= 4;? Ответ: 3.
 
@@ -1014,7 +1046,10 @@ class Program
     }
 }
 ```
-
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.9.png">
+</picture>
 
 
 > * №10. Задача: Чему равно x после int x = 7; x ^= 7;? Ответ: 0 (любое число XOR само с собой дает 0).
@@ -1033,6 +1068,11 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.5.10.png">
+</picture>
+
 ---
 
 ### 3.6. Тернарный и null-операторы
@@ -1055,6 +1095,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.1.png">
+</picture>
 
 > * №2. Задача: Чему равно int x = 5; int y = (x > 10) ? 100 : (x > 2) ? 50 : 0;? Ответ: 50.
 
@@ -1072,6 +1116,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.2.png">
+</picture>
 
 > * №3. Задача: Какой тип имеет результат выражения true ? 10 : 15.5? Ответ: double.
 
@@ -1088,6 +1136,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.3.png">
+</picture>
 
 > * №4. Задача: Что выведет выражение string s = null; Console.WriteLine(s?.Length);? Ответ: Ничего / null (оператор ?. предотвращает NullReferenceException).
 
@@ -1104,6 +1156,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.4.png">
+</picture>
 
 > * №5. Задача: Какой тип имеет результат выражения s?.Length для string s? Ответ: int? (Nullable<int>).
 
@@ -1121,6 +1177,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.5.png">
+</picture>
 
 > * №6. Задача: Вычислите: string name = null; string res = name ?? "Anonymous";. Ответ: "Anonymous".
 
@@ -1138,6 +1198,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.6.png">
+</picture>
 
 > * №7. Задача: Вычислите: string a = null, b = "User", c = "Admin"; string res = a ?? b ?? c;. Ответ: "User".
 
@@ -1155,6 +1219,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.7.png">
+</picture>
 
 > * №8. Задача: Что вернет выражение false ? (10 / 0) : 42? Ответ: 42 (второй операнд не вычисляется из-за ложного условия).
 
@@ -1173,6 +1241,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.8.png">
+</picture>
+
 > * №9. Задача: Скомпилируется ли код var x = condition ? 10 : "text";? Ответ: Нет (в классическом C#), так как у типов int и string нет неявного взаимного приведения.
 
 ```csharp
@@ -1190,6 +1263,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.9.png">
+</picture>
+
 > * №10. Задача: Чему равно int? count = null; int res = count?.GetHashCode() ?? -1;? Ответ: -1.
 
 ```csharp
@@ -1206,6 +1284,11 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.6.10.png">
+</picture>
+
 ---
 
 ### 3.7. Операторы типов и приведения
@@ -1228,6 +1311,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.1.png">
+</picture>
 
 > * №2. Задача: Что вернет object obj = 123; string s = obj as string;? Ответ: null (оператор as возвращает null при невозможности безопасного приведения ссылочного типа).
 
@@ -1245,6 +1332,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.2.png">
+</picture>
 
 > * №3. Задача: Что произойдет при явном приведении object obj = 123; string s = (string)obj;? Ответ: Выбросится исключение System.InvalidCastException.
 
@@ -1262,6 +1353,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.3.png">
+</picture>
 
 > * №4. Задача: Что вернет typeof(int) == typeof(Int32)? Ответ: true (псевдоним языка ссылается на один и тот же тип CLR).
 
@@ -1278,6 +1373,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.4.png">
+</picture>
 
 > * №5. Задача: Чему равен результат sizeof(long) в байтах? Ответ: 8.
 
@@ -1293,6 +1392,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.5.png">
+</picture>
+
 > * №6. Задача: Что вернет null is string? Ответ: false (шаблон is для null всегда возвращает false, кроме шаблона is null).
 
 ```csharp
@@ -1306,6 +1410,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.6.png">
+</picture>
 
 > * №7. Задача: Что вернет выражение object x = null; bool b = x is null;? Ответ: true.
 
@@ -1324,6 +1432,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.7.png">
+</picture>
+
 > * №8. Задача: Каков результат (int)3.99? Ответ: 3 (дробная часть отсекается без округления).
 
 ```csharp
@@ -1339,6 +1452,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.8.png">
+</picture>
 
 > * №9. Задача: Каков результат pattern matching: object o = 42; if (o is int val && val > 40) { ... } Будет ли выполнено тело блока? Ответ: Да, val получит значение 42, условие val > 40 истинно.
 
@@ -1357,6 +1475,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.9.png">
+</picture>
+
 > * №10. Задача: Что вернет выражение default(int) и default(string)? Ответ: 0 и null.
 
 ```csharp
@@ -1370,6 +1493,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.7.10.png">
+</picture>
 
 ---
 
@@ -1393,6 +1521,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.1.png">
+</picture>
+
 > * №2. !(true && false) ^ (true || false && false)
 
 ```csharp
@@ -1408,6 +1541,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.2.png">
+</picture>
 
 > * №3. (10 & 6) == 2 && (10 | 6) == 14
 
@@ -1425,6 +1563,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.3.png">
+</picture>
+
 > * №4. (15 >> 1 == 7) && (7 << 2 == 28)
 
 ```csharp
@@ -1440,6 +1583,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.4.png">
+</picture>
 
 > * №5. (8 > 5) && (3 + 2 * 4 == 11) && !(false || !true)
 
@@ -1457,6 +1605,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.5.png">
+</picture>
+
 > * №6. (true || false) && (false || true) ^ (true && !false)
 
 ```csharp
@@ -1472,6 +1625,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.6.png">
+</picture>
 
 > * №7. (100 / 10 == 10) && (100 % 30 == 10) && !(5 - 5 != 0)
 
@@ -1489,6 +1647,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.7.png">
+</picture>
+
 > * №8. (4 ^ 4) == 0 && (4 ^ 0) == 4 && (0 ^ 0) == 0
 
 ```csharp
@@ -1504,6 +1667,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.8.png">
+</picture>
 
 > * №9. !(5 != 5) && ((3 >= 3) || (10 / 0 == 1))
 
@@ -1522,6 +1690,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.9.png">
+</picture>
+
 > * №10. (false && (10 / 0 == 1)) || (true && (20 > 15))
 
 ```csharp
@@ -1539,6 +1712,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.10.png">
+</picture>
+
 > * №11. (12 & 10) > 5 || (12 | 10) < 15 && !(3 == 3)
 
 ```csharp
@@ -1554,6 +1732,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.11.png">
+</picture>
 
 > * №12. ((20 >> 2) == 5) ^ ((5 << 1) == 11)
 
@@ -1571,6 +1754,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.12.png">
+</picture>
+
 > * №13. !(!(true || false) && (true && !false))
 
 ```csharp
@@ -1586,6 +1774,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.13.png">
+</picture>
 
 > * №14. (7 > 2 ? 10 : 20) == 10 && (3 < 1 ? 5 : 15) == 15
 
@@ -1603,6 +1796,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.14.png">
+</picture>
+
 > * №15. (5 & 1) == 1 && (6 & 1) == 0 && (7 & 1) == 1 (проверка на нечетность)
 
 ```csharp
@@ -1618,6 +1816,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.15.png">
+</picture>
 
 > * №16. ((10 > 5 ? true : false) ^ (3 > 8 ? true : false)) && !false
 
@@ -1635,6 +1838,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.16.png">
+</picture>
+
 > * №17. !( (5 > 2 && 10 > 20) || (3 == 3 && 4 <= 4) )
 
 ```csharp
@@ -1650,6 +1858,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.17.png">
+</picture>
 
 > * №18. ( (1 << 3) == 8 ) && ( (16 >> 4) == 1 ) && ( (2 << 2) == 8 )
 
@@ -1667,6 +1880,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.18.png">
+</picture>
+
 > * №19. ( (10 & 7) == 2 ) || ( (10 | 7) == 15 ) ^ !(4 > 1)
 
 ```csharp
@@ -1682,6 +1900,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.19.png">
+</picture>
 
 > * №20. false || true && false || true && !false
 
@@ -1699,6 +1922,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.20.png">
+</picture>
+
 > * №21. (25 % 4 == 1) && (17 / 3 == 5) && (17 % 3 == 2)
 
 ```csharp
@@ -1714,6 +1942,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.21.png">
+</picture>
 
 > * №22. ( (5 ^ 3 ^ 3) == 5 ) && ( (10 ^ 0) == 10 )
 
@@ -1731,6 +1964,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.22.png">
+</picture>
+
 > * №23. (true ? (false ? 1 : 2) : (true ? 3 : 4)) == 2
 
 ```csharp
@@ -1746,6 +1984,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.23.png">
+</picture>
 
 > * №24. !(true && !(false || !false))
 
@@ -1763,6 +2006,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.24.png">
+</picture>
+
 > * №25. ((~0 == -1) && (~(-1) == 0))
 
 ```csharp
@@ -1778,6 +2026,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.25.png">
+</picture>
 
 > * №26. ( (8 & 4) == 0 ) && ( (8 | 4) == 12 ) && ( (8 ^ 4) == 12 )
 
@@ -1795,6 +2048,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.26.png">
+</picture>
+
 > * №27. !(10 >= 10) || (5 < 3) && (2 == 2) || !(false)
 
 ```csharp
@@ -1811,6 +2069,11 @@ class Program
 }
 ```
 
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.27.png">
+</picture>
+
 > * №28. ( (15 & ~1) == 14 ) && ( (14 | 1) == 15 )
 
 ```csharp
@@ -1826,6 +2089,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.28.png">
+</picture>
 
 > * №29. ( (true || false) ? (false && true ? 10 : 20) : 30 ) == 20
 
@@ -1842,6 +2109,11 @@ class Program
     }
 }
 ```
+
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.29.png">
+</picture>
 
 > * №30. ( (10 > 2) && (5 < 9) ) ^ ( !(4 >= 5) && (6 != 7) )
 
@@ -1938,3 +2210,7 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.8.30.png">
+</picture>
