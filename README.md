@@ -18,6 +18,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/KseniaBashkatova/Task2./blob/main/asssets/3.1.1.png">
+</picture>
 
 > * №2. Задача: Каково значение res после выполнения int a = 5; int res = ++a * 2;? Ответ: res = 12 (префиксный инкремент увеличивает a до 6, затем выполняется умножение).
 ```csharp
