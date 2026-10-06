@@ -663,6 +663,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.1.png">
+</picture>
 
 > * №2. Задача: Чему равен результат 5 | 3? Ответ: 0101 | 0011 = 0111 (десятичное 7).
 
@@ -679,6 +683,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.2.png">
+</picture>
 
 > * №3. Задача: Чему равен результат 5 ^ 3? Ответ: 0101 ^ 0011 = 0110 (десятичное 6).
 
@@ -695,6 +703,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.3.png">
+</picture>
 
 > * №4. Задача: Вычислите ~0 для типа int. Ответ: -1 (все биты устанавливаются в 1, что в дополнительном коде равно -1).
 
@@ -711,6 +723,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.4.png">
+</picture>
 
 > * №5. Задача: Чему равно 1 << 4? Ответ: 16 
 
@@ -727,6 +743,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.5.png">
+</picture>
 
 > * №6. Задача: Чему равно 40 >> 2? Ответ: 10
 
@@ -743,6 +763,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.6.png">
+</picture>
 
 > * №7. Задача: Как с помощью побитовой операции проверить, установлен ли третий бит числа n (маска 2^3=8)? 
 
@@ -762,6 +786,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.7.png">
+</picture>
 
 > * №8. Задача: Как с помощью побитовой операции установить 2-й бит числа n в 1? Ответ: n = n | (1 << 2); (или n |= (1 << 2);).
 
@@ -779,6 +807,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.8.png">
+</picture>
 
 > * №9. Задача: Как сбросить (установить в 0) 4-й бит числа n? Ответ: n = n & ~(1 << 4); (или n &= ~(1 << 4);).
 
@@ -796,6 +828,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.9.png">
+</picture>
 
 > * №10. Задача: Каков результат выражения (-16) >> 2 для int? Ответ: -4 (арифметический сдвиг вправо сохраняет знаковый бит 1).
 
@@ -812,6 +848,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.4.10.png">
+</picture>
 
 ---
 
