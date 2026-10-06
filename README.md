@@ -257,7 +257,7 @@ class Program
 ```
 `Результат выполнения:`
 <picture>
-  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.2.png.png">
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.2png.png">
 </picture>
 
 > * №3. Задача: Чему равно выражение double.NaN == double.NaN? Ответ: false (по стандарту IEEE 754 NaN не равен ничему, даже самому себе).
@@ -442,6 +442,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.1.png.png">
+</picture>
 
 > * №2. Задача: Будет ли вызван метод Foo() в false && Foo()? Ответ: Нет, благодаря короткому замыканию оператора &&.
 
@@ -463,6 +467,10 @@ class Program
         }
     }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.2.png.png">
+</picture>
 
 > * №3. Задача: Будет ли вызван метод Foo() в false & Foo()? Ответ: Да, побитовое/строгое логическое & вычисляет оба операнда.
 
@@ -484,6 +492,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.3.png.png">
+</picture>
 
 > * №4. Задача: Вычислите результат: true ^ false ^ true. Ответ: false (true ^ false = true, затем true ^ true = false).
 
@@ -500,6 +512,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.4.png.png">
+</picture>
 
 > * №5. Задача: Что вернет выражение !(5 > 2 || 3 < 1)? Ответ: false (5 > 2 истинно, внутри скобок true, отрицание дает false).
 
@@ -516,6 +532,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.5.png.png">
+</picture>
 
 > * №6. Задача: Дано: bool a = true, b = false;. Чему равно a && !b || b && !a? Ответ: true (true && true || false && false -> true || false -> true).
 
@@ -533,6 +553,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.6.png.png">
+</picture>
 
 > * №7. Задача: Каков результат true || (x / 0 == 1) при любом целом x? Ответ: true (деление на ноль не произойдет из-за короткого замыкания ||).
 
@@ -550,6 +574,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.7.png.png">
+</picture>
 
 > * №8. Задача: Каков результат false & (10 / 0 == 1)? Ответ: Выбросится исключение DivideByZeroException, так как & обязательно вычисляет правый операнд.
 
@@ -566,6 +594,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.8.png.png">
+</picture>
 
 > * №9. Задача: Чему эквивалентно выражение !(A && B) по закону де Моргана? Ответ: !A || !B.
 
@@ -584,6 +616,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.9.png.png">
+</picture>
 
 > * №10. Задача: Чему эквивалентно выражение !(A || B) по закону де Моргана? Ответ: !A && !B.
 
@@ -602,6 +638,11 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.3.10.png.png">
+</picture>
+
 ---
 
 ### 3.4. Побитовые операторы и сдвиги
