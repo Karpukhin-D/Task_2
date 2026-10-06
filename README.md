@@ -235,6 +235,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.1.png.png">
+</picture>
 
 > * №2. Задача: Чему равно "hello" == "hello" в C# и почему? Ответ: true, так как для типа string оператор == перегружен для посимвольного сравнения значений.
 
@@ -251,6 +255,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.2.png.png">
+</picture>
 
 > * №3. Задача: Чему равно выражение double.NaN == double.NaN? Ответ: false (по стандарту IEEE 754 NaN не равен ничему, даже самому себе).
 
@@ -267,6 +275,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.3.png.png">
+</picture>
 
 > * №4. Задача: Каков результат выражения object a = new int[] { 1 }; object b = new int[] { 1 }; bool r = a == b;? Ответ: false (сравниваются ссылки на два разных объекта в куче).
 
@@ -285,6 +297,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.4.png.png">
+</picture>
 
 > * №5. Задача: Чему равно 10 != 10.0? Ответ: false (целое число 10 неявно приводится к 10.0, значения равны).
 
@@ -301,6 +317,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.5.png.png">
+</picture>
 
 > * №6. Задача: Что вернет null == null? Ответ: true.
 
@@ -317,6 +337,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.6.png.png">
+</picture>
 
 > * №7. Задача: Каков результат выражения (3 < 5) == (10 >= 20)? Ответ: false (true == false дает false).
 
@@ -333,6 +357,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.7.png.png">
+</picture>
 
 > * №8. Задача: Вычислите bool res = 4 <= 4 && 5 > 2;. Ответ: true.
 
@@ -349,6 +377,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.8.png.png">
+</picture>
 
 > * №9. Задача: Что вернет выражение char c = 'b'; bool res = c > 'a';? Ответ: true (символы сравниваются по их числовым кодам Unicode: 98 > 97).
 
@@ -366,6 +398,10 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.9.png.png">
+</picture>
 
 > * №10. Задача: Сравните результат bool r = -0.0 == 0.0;. Ответ: true (ноль со знаком равен обычному нулю).
 
@@ -382,6 +418,11 @@ class Program
     }
 }
 ```
+`Результат выполнения:`
+<picture>
+  <img src="https://github.com/Karpukhin-D/Task_2/blob/main/task%202/3.2.10.png.png">
+</picture>
+
 ---
 ### 3.3. Логические операторы
 ---
